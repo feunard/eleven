@@ -1,0 +1,55 @@
+{
+  "name": "eleven",
+  "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "start": "node lib/server/main",
+    "build": "tsc && parcel build src/client/index.html",
+    "test": "jest",
+    "dev:server": "tsc && node lib/server/main",
+    "dev:client": "parcel serve src/client/index.html",
+    "dev:codegen": "json2ts --cwd=schemas -i schemas/ -o src/interfaces"
+  },
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^10.1.0",
+    "@fastify/static": "^6.9.0",
+    "@fastify/swagger": "^8.3.1",
+    "@fastify/swagger-ui": "^1.5.0",
+    "fastify": "^4.13.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/core": "^6.0.0",
+    "@mantine/dates": "^6.0.0",
+    "@mantine/form": "^6.0.0",
+    "@mantine/hooks": "^6.0.0",
+    "@mantine/notifications": "^6.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "dayjs": "^1.11.7",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "jest": "^29.4.3",
+    "json-schema-to-typescript": "^12.0.0",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.0.4",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}
