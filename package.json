@@ -1,6 +1,10 @@
 {
   "name": "eleven",
   "packageManager": "yarn@3.4.1",
+  "main": "lib/server/main.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node lib/server/main",
     "build": "tsc && parcel build src/client/index.html",

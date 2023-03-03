@@ -1,6 +1,6 @@
 # eleven
 
-Simple CRUD with React+Mantine & Fastify.
+Simple CRUD with React.js+Mantine & Fastify.
 
 ## requirements
 
@@ -13,17 +13,17 @@ corepack enable     # Enable yarn
 yarn                # Install dependencies
 ```
 
-## dev
-
-```bash
-yarn dev:client
-yarn dev:server
-```
-
 ## build
 
 ```bash
-yarn build
-yarn start
-# then open http://localhost:3000
+yarn build # build front + back
+yarn start # start back
+# > open http://localhost:3000
+```
+
+## dev
+
+```bash
+yarn dev:client # run parcel serve
+yarn dev:server # run tsc then node main.js
 ```
